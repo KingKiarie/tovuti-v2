@@ -1,0 +1,58 @@
+# Python-related files
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pyd
+*.pyd
+
+# Virtual Environment
+virtual/
+venv/
+env/
+ENV/
+.venv/
+
+# Django specific files
+db.sqlite3             # SQLite database file, if used locally
+*.sqlite3
+media/                 # Media uploads, if you have a media directory in the project
+staticfiles/           # Static files generated with 'collectstatic' command
+
+# Ignore secret settings files
+.env                   # Environment variables file, for secrets like API keys
+*.env
+config/settings/local.py # For projects with multiple settings files (local/dev/prod setup)
+
+# OS generated files
+.DS_Store              # macOS
+Thumbs.db              # Windows
+
+# IDEs and Editors
+.vscode/               # VSCode settings and workspace folder
+.idea/                 # PyCharm project settings
+*.sublime-project
+*.sublime-workspace
+
+# Logs and Debugging
+*.log                  # Log files
+logs/
+
+# Packages
+*.egg
+*.egg-info
+dist/
+build/
+pip-wheel-metadata/
+
+# Migrations
+**/migrations/*.pyc
+**/migrations/*.py           # Uncomment only if you want to ignore all migrations
+
+# Node (if using npm or tailwind for frontend assets)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Docker files
+docker-compose.override.yml
