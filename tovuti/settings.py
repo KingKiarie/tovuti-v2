@@ -24,9 +24,9 @@ SECRET_KEY = 'django-insecure-8h=c30)jjaepewxx6)n+anyc7e2xo6bohlz$2r7-6hv!v6(u2%
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+# set to false when running in a production env
 ALLOWED_HOSTS = []
-
+# we shall add a domain or host upon production
 
 # Application definition
 
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog.apps.BlogConfig'
 ]
 
 MIDDLEWARE = [
@@ -105,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Nairobi/Africa'
 
 USE_I18N = True
 
